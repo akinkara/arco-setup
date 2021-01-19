@@ -29,112 +29,17 @@
 #https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config
 
 
-echo
-tput setaf 1
 echo "################################################################"
-echo "#####  Choose wisely - one time setup after clean install   ####"
+echo "#####  Akin Kara setting up...  ####"
 echo "################################################################"
-tput sgr0
-echo
-echo "Select the correct desktop"
-echo
-echo "0.  Do nothing"
-echo "1.  Erik"
-echo "2.  Marco"
-echo "3.  Raniel"
-echo "4.  John"
-echo "5.  Steve"
-echo "6.  Brad"
-echo "7.  fake1"
-echo "8.  fake2"
-echo "9.  fake3"
-echo "10. fake4"
-echo "Type the number..."
 
-read CHOICE
-
-case $CHOICE in
-
-    0 )
-      echo
-      echo "########################################"
-      echo "We did nothing as per your request"
-      echo "########################################"
-      echo
-      ;;
-
-    1 )
-			git config --global pull.rebase false
-			git config --global push.default simple
-			git config --global user.name "Erik Dubois"
-			git config --global user.email "erik.dubois@gmail.com"
-			sudo git config --system core.editor nano
-			git config --global credential.helper cache
-			git config --global credential.helper 'cache --timeout=32000'
-      ;;
-    2 )
-			git config --global pull.rebase false
-			git config --global push.default simple
-			git config --global user.name "Marco Obaid"
-			git config --global user.email "marco.obaid@gmail.com"
-			sudo git config --system core.editor nano
-			git config --global credential.helper cache
-			git config --global credential.helper 'cache --timeout=32000'
-      ;;
-    3 )
-			git config --global pull.rebase false
-			git config --global push.default simple
-			git config --global user.name "Raniel Laguna"
-			git config --global user.email "avraniel@gmail.com"
-			sudo git config --system core.editor nano
-			git config --global credential.helper cache
-			git config --global credential.helper 'cache --timeout=32000'
-      ;;
-    4 )
-			git config --global pull.rebase false
-			git config --global push.default simple
-			git config --global user.name "John Blevins"
-			git config --global user.email "samurailostinjapan@gmail.com"
-			sudo git config --system core.editor nano
-			git config --global credential.helper cache
-			git config --global credential.helper 'cache --timeout=32000'
-      ;;
-    5 )
-			git config --global pull.rebase false
-			git config --global push.default simple
-			git config --global user.name "Steve Younger"
-			git config --global user.email "coritanie@gmail.com"
-			sudo git config --system core.editor nano
-			git config --global credential.helper cache
-			git config --global credential.helper 'cache --timeout=32000'
-      ;;
-    6 )
-			git config --global pull.rebase false
-			git config --global push.default simple
-			git config --global user.name "Brad Heffernan"
-			git config --global user.email "ph3onix83@gmail.com"
-			sudo git config --system core.editor nano
-			git config --global credential.helper cache
-			git config --global credential.helper 'cache --timeout=32000'
-      ;;
-    7 )
-      echo
-      ;;
-    8 )
-      echo
-      ;;
-    9 )
-      echo
-      ;;
-    10 )
-      echo
-      ;;
-    * )
-      echo "#################################"
-      echo "Choose the correct number"
-      echo "#################################"
-      ;;
-esac
+git config --global pull.rebase false
+git config --global push.default simple
+git config --global user.name "Akin Kara"
+git config --global user.email "akin.kara@rakort.com"
+sudo git config --system core.editor nano
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=32000'
 
 echo "###########################################################"
 echo "Github credentials have been set"
